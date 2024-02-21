@@ -1,0 +1,83 @@
+.gallery-main {
+    background-color: #020202;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .gallery-main .gall-text {
+    font-size: 80px;
+    color: #fff;
+    font-family: "Playball" !important;
+    margin: 0;
+  }
+  
+  .gallery-main .gall-sub-text {
+    font-size: 18px;
+    color: rgb(201, 200, 200);
+    font-family: "Poppins-light";
+  }
+  
+  .gallery-main .main-caorusel {
+    padding: 50px 0;
+  }
+  
+  .gallery-main .main-caorusel .slider-gall-img {
+    height: 455px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+  
+  .gallery-main .main-caorusel .slider-gall-img:hover {
+    top: -30px;
+  }
+  
+  .carouselItem {
+    padding-right: 20px;
+  }
+  
+  .customArrow,
+  .leftarrow {
+    position: absolute !important;
+    height: 50px !important;
+    width: 50px !important;
+    top: 175px;
+    right: 120px;
+    z-index: 999999;
+  }
+  
+  .leftarrow {
+    right: 182px;
+  }
+  
+  .react-multi-carousel-list {
+    position: unset !important;
+  }
+  
+  @media (max-width: 1200px) {
+    .customArrow,
+    .leftarrow {
+      display: none;
+    }
+    .gallery-main .gall-text {
+      font-size: 50px !important;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .gallery-main .main-caorusel .slider-gall-img {
+      height: 100%;
+      width: 100%;
+    }
+    .carouselItem {
+      padding: 0 10px;
+    }
+    .gallery-main .gall-text {
+      font-size: 30px !important;
+    }
+    .gallery-main .gall-sub-text {
+      font-size: 14px !important;
+    }
+  }

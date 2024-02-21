@@ -1,0 +1,25 @@
+<div class="gallery-main" id="gallery">
+    <p class="gall-text">{{
+      .Site.Data.data.gallery.text}}</p>
+    <p class="gall-sub-text">{{
+      .Site.Data.data.gallery.subTitle}}</p>
+    <div style="position: relative; height: 100px; width: 100%;" class="custom-arrow-div">
+      <div class="swiper-button-prev customprev custombtnarrow">
+        <img src="/images/arrowLeft.png" />
+      </div>
+      <div class="swiper-button-next custombtnarrow customnext">
+        <img src="/images/arrowRight.png" />
+      </div>
+    </div>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {{ range .Site.Data.data.gallery.Slider }}
+        <div class="swiper-slide">
+          <img src="{{ . }}" />
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
